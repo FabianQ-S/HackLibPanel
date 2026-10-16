@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    [x-cloak] {
+        display: none !important;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply px-4 py-2 bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-500 hover:to-cyan-500 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25 text-sm;
+    }
+    
+    .btn-secondary {
+        @apply px-4 py-2 bg-white/5 border border-purple-500/20 hover:border-purple-500/40 text-gray-300 hover:text-white rounded-lg transition-all duration-300 text-sm;
+    }
+    
+    .btn-danger {
+        @apply px-4 py-2 bg-red-500/10 border border-red-500/20 hover:border-red-500/40 text-red-400 hover:text-red-300 rounded-lg transition-all duration-300 text-sm;
+    }
+    
+    .card {
+        @apply bg-[#0d0d1a]/80 backdrop-blur-xl border border-purple-500/20 rounded-xl p-6 transition-all duration-300 hover:border-purple-500/40;
+    }
+    
+    .card-glow {
+        @apply card hover:shadow-lg hover:shadow-purple-500/10;
+    }
+    
+    .input-field {
+        @apply w-full px-4 py-3 bg-black/50 border border-purple-500/20 rounded-lg text-gray-200 placeholder-gray-600 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/50 focus:outline-none transition-all duration-300;
+    }
+    
+    .select-field {
+        @apply w-full px-4 py-3 bg-black/50 border border-purple-500/20 rounded-lg text-gray-200 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/50 focus:outline-none transition-all duration-300 appearance-none;
+    }
+    
+    .badge {
+        @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium border;
+    }
+    
+    .table-header {
+        @apply text-left text-xs text-gray-500 uppercase tracking-wider px-4 py-3;
+    }
+    
+    .table-cell {
+        @apply px-4 py-3 text-sm;
+    }
+    
+    .terminal-prompt {
+        @apply text-xs text-gray-600 font-mono mb-4;
+    }
+    
+    .section-title {
+        @apply text-xl font-['Orbitron'] font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent;
+    }
+    
+    .stat-card {
+        @apply card-glow p-5 flex flex-col gap-2;
+    }
+
+    .filter-pill {
+        @apply px-3 py-1.5 rounded-full text-xs font-medium border transition-all duration-200 cursor-pointer;
+    }
+    
+    .filter-pill-active {
+        @apply bg-purple-500/20 text-purple-300 border-purple-500/30;
+    }
+    
+    .filter-pill-inactive {
+        @apply bg-white/5 text-gray-400 border-white/10 hover:border-purple-500/30 hover:text-gray-200;
+    }
+}

@@ -1,0 +1,33 @@
+# Dependencias y paquetes externos
+/vendor/
+/composer.phar
+
+# Base de datos en tiempo de ejecución (SQLite)
+/storage/*.sqlite
+/storage/*.sqlite-journal
+/storage/*.sqlite-wal
+/storage/*.sqlite-shm
+
+# Binarios y compilados generados
+/tailwindcss
+tailwindcss-linux*
+/public/css/app.css
+
+# Archivos temporales y de depuración
+*.log
+*.tmp
+*.cookie
+.DS_Store
+Thumbs.db
+
+# Configuraciones de IDEs y editores
+.idea/
+.vscode/
+*.swp
+*.swo
+.gemini/
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
